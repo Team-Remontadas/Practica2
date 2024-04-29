@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(imgs/fondo4.jpeg); 
+    background-size: cover;  /*se puede usar otra imagen xd, solo fue una idea*/
+}
+body .cent{
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    padding: 20%;
+}
+.container{
+    max-width: 650px;
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: rgba(0,0,0,0.2);
+    box-shadow: 0 15px 20px rgb(0, 0, 0,0.8);
+    backdrop-filter: blur(70px) ;
+}
+h2{
+    font-size: 26px;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    padding-bottom: 8px;
+    border-bottom: 1px solid silver;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+.input-box:nth-child(2n){
+    justify-content: end;
+}
+.input-box label{
+    width: 95%;
+    color: white;
+    font-weight: bold;
+    margin: 5px 0;
+}
+.input-box input{
+    height: 40px;
+    width: 95%;
+    padding: 0 10px;
+    border-radius: 1px solid #ccc;
+    outline: none;
+}
+.input-box input:is(:focus,:valid){
+    box-shadow: 0 3px 6px rgb(0, 0, 0,0.2);
+}
+#btnGuardar {
+    text-decoration: none;
+}
+.button-container a{
+    width: 100px;
+    margin-top: 10px;
+    padding-left: 10px;
+    display: block;
+    font-size: 20px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@media(max-width:600px){
+    .container{
+        min-width: 280px;
+
+    }
+    .content{
+        max-height: 380px;
+        overflow: auto;
+    }
+    .input-box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    .input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+    .content::-webkit-scrollbar{
+        width: 2;
+    }
+
+}
+

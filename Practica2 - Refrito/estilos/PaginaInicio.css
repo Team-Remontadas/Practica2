@@ -1,0 +1,138 @@
+:root {
+    --azul_oscurito:#064469;
+    --gris_claro: #D0D7E1;
+    --celestillo: #9ccddb;
+    --azul_mas_oscuro: #072d44;
+    --azul_fondo_manos: #5c8eba;
+}
+
+body {
+    background-color: var(--azul_fondo_manos); /* Color de fondo por si la imagen no carga */
+    background-image: url('imgs/fondo.jpg'); /* Establece la imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo sin perder proporciones */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: white; /* Cambia el color del texto para mejor contraste */
+    font-family: Arial, Helvetica, sans-serif; /* Asegura que la tipografía es consistente */
+}
+
+
+
+                        /*main*/
+
+/*Banner*/
+
+
+
+
+.banner {
+    width: 40%; /* Reduce el ancho a 80% del contenedor padre */
+    margin: 20px auto; /* Margen superior e inferior de 20px y margen izquierdo y derecho automático para centrar */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta cualquier contenido que desborde los bordes redondeados */
+    position: relative; /* Necesario para posicionar absolutamente las imágenes dentro */
+    
+}
+
+.banner img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor .banner */
+    height: auto; /* Mantiene la proporción de la imagen ajustándose al ancho */
+    display: none;
+}
+
+.banner-img.activo {
+    display: block; /* Solo muestra la imagen activa */
+}
+
+
+
+.descripcion-empresa {
+    background-color: #f8f9fa; /* Un color de fondo suave */
+    padding: 20px; /* Algo de relleno para espacio interno */
+    margin: 20px auto; /* Centrar la sección y añadir margen vertical */
+    border-radius: 8px; /* Bordes redondeados para estética */
+    max-width: 60%; /* Limitar el ancho para mejor legibilidad en pantallas grandes */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Una ligera sombra para profundidad */
+}
+
+
+
+
+.botones-acceso {
+    text-align: center; /* Centra los botones horizontalmente */
+    margin-top: 20px; /* Espacio entre la descripción y los botones */
+    padding-bottom: 20px; /* Espacio debajo de los botones */
+}
+
+.boton-acceso {
+    display: inline-block; /* Hacer que el enlace sea bloque en línea para aplicar padding */
+    padding: 10px 20px; /* Padding para hacer el botón más grande */
+    margin: 5px; /* Espacio entre los botones */
+    background-color: #007bff; /* Color de fondo azul */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Eliminar el subrayado del texto */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor en forma de mano al pasar sobre el botón */
+    font-size: 16px; /* Tamaño del texto */
+    transition: background-color 0.3s; /* Transición suave del color */
+}
+
+.boton-acceso:hover {
+    background-color: #0056b3; /* Color cuando el mouse está sobre el botón */
+}
+
+.preguntas-acceso {
+    text-align: center; /* Centrar el texto horizontalmente */
+    margin-top: 40px; /* Espacio por encima de las preguntas */
+    margin-bottom: 20px; /* Espacio debajo antes de los botones */
+}
+
+.preguntas-acceso h2 {
+    color: var(--azul_oscurito); /* Utilizar el color definido en tus variables */
+    font-family: Arial, Helvetica, sans-serif; /* Mantener la consistencia con la tipografía */
+    font-size: 24px; /* Tamaño de fuente adecuado */
+    font-weight: bold; /* Fuente en negrita para destacar las preguntas */
+    margin: 10px 0; /* Espacio vertical para separar las preguntas si es necesario */
+}
+
+.acceso-individual {
+    text-align: center; /* Centra el contenido de cada bloque de acceso */
+    margin-top: 20px; /* Espacio por encima de cada bloque */
+}
+
+.acceso-individual h2 {
+    color: var(--azul_oscurito); /* Utilizar el color definido en tus variables */
+    font-family: Arial, Helvetica, sans-serif; /* Consistencia en la tipografía */
+    font-size: 24px; /* Tamaño de fuente adecuado */
+    font-weight: bold; /* Fuente en negrita para resaltar la pregunta */
+    margin-bottom: 10px; /* Espacio entre la pregunta y el botón */
+}
+
+
+
+
+
+
+
+
+
+.menu {
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    width: 500px;
+    /*border: 2px solid black;*/
+    text-align: center;
+}
+
+.menu button {
+    height: 50px;
+    width: 300px;
+    background-color: var(--celestillo);
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}

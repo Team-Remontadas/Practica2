@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresas</title>
+    <link rel="stylesheet" href="estilos/registrarEmpresa.css">
+</head>
+<body>
+    <div class="cent">
+        <div class="container">
+            <form id="userForm" >
+                <h2>Registration</h2>
+                <div class="content">
+                    <div class="input-box">
+                        <label for="name">Enterprise</label>
+                        <input type="text" id="nameEmp" name="nameEmp" placeholder="Enterprise's name" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="Url">Url</label>
+                        <input type="text" id="urlEmp" name="urlEmp" placeholder="Enter a valid url" required>
+                    </div> 
+                    <div class="input-box">
+                        <label for="callcenter">Callcenter</label>
+                        <input type="text" id="callcenter" name="callcenter" placeholder="Enter call center phone" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="address">Address</label>
+                        <input type="address" id="address" name="address" placeholder="Enter enterprise address" required>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <a href="#" type="button" id="btnGuardar">Guardar</a>
+                    <br>
+                </div>
+                <hr>
+                <br>
+                <p>The security ID will be assigned, and it should be stored securely.</p>
+            </form>
+        </div>
+    </div>
+    <script src="scripts/registrarEmpresa.js"> </script>
+</body>
+</html>

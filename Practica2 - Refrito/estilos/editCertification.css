@@ -1,0 +1,70 @@
+main h2 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.contenedor {
+    background-color: rgb(246, 246, 246);
+    width: 500px;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border: 2px solid rgb(64, 112, 255);
+}
+
+
+.contenedor input {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background-color: rgb(246, 246, 246);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 30px;
+    width: 320px;
+    height: 40px;
+   
+}
+
+.contenedor textarea {
+    height: 200px;
+    width: 320px;
+    resize: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 1px;
+}
+
+.contenedor p {
+    font-size: 16px; 
+    color: #999; 
+    margin-right: auto;
+    margin-left: 90px;
+    margin-top: 30px;
+    /*border-bottom: 2px solid rgba(0, 0, 0, 0.457); */
+    width: 320px;
+}
+
+input[type="submit"] {
+    background-color: rgb(64, 112, 255) ;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(114, 149, 255) ;
+}
+
+input:focus{
+    outline: none;
+}
+
+.desc input{
+    height: 150px;
+    margin-top: -10px;
+    border: 2px solid black;
+}
+
+
